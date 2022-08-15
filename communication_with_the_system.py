@@ -3,7 +3,7 @@ import speech_recognition as sr
 from gtts import gTTS
 import playsound
 import time
-import os #oo
+import os #ooj
 
 def speak(text):
     tts= gTTS(text=text, lang="en")
@@ -11,7 +11,7 @@ def speak(text):
     tts.save(filename)
     playsound.playsound(filename)
 
-
+#hhh
 def get_audio():
     r = sr.Recognizer()
     with sr.Microphone() as source:
